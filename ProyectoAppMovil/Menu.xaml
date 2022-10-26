@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAppMovil.Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Menu Principal"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Title"/>
+            <Button x:Name="btnIniciar"  Text="Iniciar Sesión" BackgroundColor="#206FB1" BorderRadius="10" TextColor="#fff" FontSize="10" Margin="5,5,5,200" FontAttributes="Italic"  />
+        </StackLayout>
+        
+        
+        
+    </ContentPage.Content>
+</ContentPage>
