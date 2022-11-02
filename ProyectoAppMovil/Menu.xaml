@@ -7,7 +7,11 @@
             <Label Text="Menu Principal"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" FontSize="Title"/>
-            <Button x:Name="btnIniciar"  Text="Iniciar Sesión" BackgroundColor="#206FB1" BorderRadius="10" TextColor="#fff" FontSize="10" Margin="5,5,5,200" FontAttributes="Italic"  />
+
+            <Label Text="&#xf007;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Title" TextColor="Aqua" />
+
+
+            <Button x:Name="btnIniciar"  Text="Iniciar Sesión" BackgroundColor="#206FB1" BorderRadius="10" TextColor="#fff" FontSize="10" Margin="5,5,5,200" FontAttributes="Italic"  Clicked="btnIniciar_Clicked" />
         </StackLayout>
         
         

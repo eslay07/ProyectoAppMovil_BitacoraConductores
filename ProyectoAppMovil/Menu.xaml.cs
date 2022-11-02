@@ -16,5 +16,13 @@ namespace ProyectoAppMovil
         {
             InitializeComponent();
         }
+
+        private void btnIniciar_Clicked(object sender, EventArgs e)
+        {
+
+
+            Navigation.PushAsync(new Prueba());
+
+        }
     }
 }
