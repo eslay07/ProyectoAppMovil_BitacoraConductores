@@ -16,7 +16,7 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
 
-                <Image Grid.Row="0" Source="https://www.edina.com.ec/anuncios/2210100489-397669.jpg" WidthRequest="250" Margin="50, 10, 50, 20" />
+                <Image  Source="https://lh3.googleusercontent.com/p/AF1QipNbnPWSubb81Qg2KtSAdkpHoFXEjYXR3dCUCEdX" WidthRequest="950" Margin="20, 40, 20, 50" />
 
                 <StackLayout Grid.Row="1" Padding="30, 70">
                     <StackLayout>

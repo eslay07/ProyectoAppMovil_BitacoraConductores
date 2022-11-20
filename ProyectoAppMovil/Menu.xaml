@@ -3,15 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoAppMovil.Menu">
     <ContentPage.Content>
+        
         <StackLayout>
-            <Label Text="Menu Principal"
-                VerticalOptions="StartAndExpand" 
+            <Label Text="Menu Principal" 
+                VerticalOptions="Fill" 
                 HorizontalOptions="CenterAndExpand" FontSize="Title"/>
+            <Image Source="https://0901.static.prezi.com/preview/v2/7j3lsvkq6mxhc6n7hwvao42vyt6jc3sachvcdoaizecfr3dnitcq_3_0.png" VerticalOptions="Fill" Aspect="AspectFill"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-            <Label Text="&#xf007;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Title" TextColor="Aqua" />
+                <Label Text="Seleccione: " Grid.Row="0" Grid.Column="0"
+                 FontSize="Title" VerticalOptions="CenterAndExpand"/>
 
-
-            <Button x:Name="btnIniciar"  Text="Iniciar Sesión" BackgroundColor="#206FB1" BorderRadius="10" TextColor="#fff" FontSize="10" Margin="5,5,5,200" FontAttributes="Italic"  Clicked="btnIniciar_Clicked" />
+                <Button x:Name="btnAsignacion" Text="+car" FontFamily="{StaticResource FontAwesomeSolid}"  CornerRadius="30" FontSize="Title" TextColor="White" Grid.Row="1" Grid.Column="0" Clicked="btnAsignacion_Clicked" WidthRequest="10" BackgroundColor="DeepSkyBlue" />
+                <Button x:Name="btnRecarga" Text="+gas-pump;" FontFamily="{StaticResource FontAwesomeSolid}"  CornerRadius="30" FontSize="Title" TextColor="White" Grid.Row="1" Grid.Column="1" Clicked="btnRecarga_Clicked" BackgroundColor="Red"/>
+                <Button x:Name="btnHoja" Text="+file-lines;" FontFamily="{StaticResource FontAwesomeSolid}"  CornerRadius="30" FontSize="Title" TextColor="White" Grid.Row="2" Grid.Column="0" Clicked="btnHoja_Clicked" BackgroundColor="Green"/>
+                <Button x:Name="btnIncidente" Text="+car-burst;" FontFamily="{StaticResource FontAwesomeSolid}"  CornerRadius="30" FontSize="Title" TextColor="White" Grid.Row="2" Grid.Column="1" Clicked="btnIncidente_Clicked" BackgroundColor="Purple"/>
+            </Grid>
         </StackLayout>
         
         
