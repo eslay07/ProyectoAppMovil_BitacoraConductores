@@ -28,6 +28,7 @@
                 <Button x:Name="btnHoja" Text="+file-lines;" FontFamily="{StaticResource FontAwesomeSolid}"  CornerRadius="30" FontSize="Title" TextColor="White" Grid.Row="2" Grid.Column="0" Clicked="btnHoja_Clicked" BackgroundColor="Green"/>
                 <Button x:Name="btnIncidente" Text="+car-burst;" FontFamily="{StaticResource FontAwesomeSolid}"  CornerRadius="30" FontSize="Title" TextColor="White" Grid.Row="2" Grid.Column="1" Clicked="btnIncidente_Clicked" BackgroundColor="Purple"/>
             </Grid>
+            <Button x:Name="btnRegistro" Text="Registros" Clicked="btnRegistro_Clicked" FontFamily="{StaticResource FontAwesomeSolid}" CornerRadius="30" FontSize="Title" TextColor="White" BackgroundColor="Blue"/>
         </StackLayout>
         
         

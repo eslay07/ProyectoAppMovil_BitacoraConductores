@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAppMovil.Recarga">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+
+                <Label Text="Recarga de Gasolina Vehiculos TN"  HorizontalOptions="Center" FontSize="Medium" BackgroundColor="Azure" />
+                <Label Text="Datos de Recarga" FontSize="Medium" VerticalOptions="Center" />
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                      
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+
+
+                    </Grid.ColumnDefinitions>
+
+
+                   
+                    <DatePicker x:Name="txtFechaR"  Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtTicketR" Placeholder="Ticket" Grid.Row="0" Grid.Column="1"/>
+                    <Entry x:Name="txtGalonesR" Placeholder="Galones" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtValorR" Placeholder="Valor $" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                    <Entry x:Name="txtKilometrajeR" Placeholder="Kilometraje" Keyboard="Numeric" Grid.Row="2" Grid.Column="0"  />
+                    <Entry x:Name="txtEstacionR" Placeholder="Estacion"  Grid.Row="2" Grid.Column="1"  />
+
+
+                </Grid>
+                <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

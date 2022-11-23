@@ -48,5 +48,11 @@ namespace ProyectoAppMovil
             Navigation.PushAsync(new Incidente());
 
         }
+
+        private void btnRegistro_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Registros());
+
+        }
     }
 }

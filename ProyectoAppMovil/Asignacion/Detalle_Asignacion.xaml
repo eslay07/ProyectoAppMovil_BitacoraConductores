@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAppMovil.Detalle_Asignacion">
+    <ContentPage.Content>
+        <StackLayout Margin="5"
+                     BackgroundColor="LightBlue">
+            <Label Text="Datos del conductor"
+                   BackgroundColor="WhiteSmoke"
+                   HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lblMensaje"
+                   HorizontalOptions="Center"/>
+            <Entry x:Name="txtNombre"
+                   Placeholder="Nombre"/>
+            <Entry x:Name="txtApellidos"
+                   Placeholder="Apellidos"/>
+            <Entry x:Name="txtEdad"
+                   Placeholder="Edad"/>
+            <Entry x:Name="txtCedula"
+                   Placeholder="Cedula"/>
+            <Entry x:Name="txtNum_Licencia"
+                   Placeholder="Num. Licencia"/>
+            <Entry x:Name="txtTip_Sangre"
+                   Placeholder="Tip. Sangre"/>
+
+
+            <Button Text="Actualizar"
+                    x:Name="btn_actualizar" Clicked="btn_actualizar_Clicked"/>
+            <Button Text="Eliminar"
+                    x:Name="btn_eliminar" Clicked="btn_eliminar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

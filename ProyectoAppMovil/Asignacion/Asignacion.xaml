@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAppMovil.Asignacion">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout >
+                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+
+                <Label Text="ASIGNACION DE VEHICULOS TELCONET"  HorizontalOptions="CenterAndExpand" FontSize="Medium" BackgroundColor="Azure" />
+            <Label Text="Informacion del Conductor" FontSize="Medium" VerticalOptions="Center" />
+           
+            <Grid>
+                <Grid.RowDefinitions>
+                    
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                   
+
+
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                   
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+
+
+                </Grid.ColumnDefinitions>
+                
+
+                <Entry x:Name="txtCodigo" Placeholder="Codigo Emple." Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnBuscar" Text="Buscar" Grid.Row="0" Grid.Column="1" Clicked="btnBuscar_Clicked" />
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtEdad" Placeholder="Edad" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtCedula" Placeholder="Cedula" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+                <Entry x:Name="txtNum_Licencia" Placeholder="Num_Licencia" Keyboard="Numeric" Grid.Row="3" Grid.Column="0"  />
+                <Entry x:Name="txtTip_Sangre" Placeholder="TipSangre"  Grid.Row="3" Grid.Column="1"  />
+                    
+                
+                    <Label Text="Vehiculo" FontSize="Medium" Grid.Row="5" Grid.Column="0" />
+                    <Entry x:Name="txtNumVehiculo" Placeholder="Num. Vehiculo" Grid.Row="6" Grid.Column="0"/>
+                    <Entry x:Name="txtModelo" Placeholder="Modelo" Grid.Row="6" Grid.Column="1"/>
+                    <Entry x:Name="txtPlaca" Placeholder="Placa"  Grid.Row="7" Grid.Column="0"/>
+                    <Entry x:Name="txtEstado" Placeholder="Estado Veh"  Grid.Row="7" Grid.Column="1"/>
+                </Grid>
+            <Button x:Name="btnGuardar2" Text="Guardar" Clicked="btnGuardar2_Clicked" />
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
