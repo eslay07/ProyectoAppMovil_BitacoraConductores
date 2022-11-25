@@ -1,9 +1,10 @@
 ﻿using System;
-
+using Plugin.Media;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Plugin.CurrentActivity;
 
 namespace ProyectoAppMovil.Droid
 {
@@ -13,7 +14,7 @@ namespace ProyectoAppMovil.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            CrossCurrentActivity.Current.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

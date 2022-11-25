@@ -21,7 +21,7 @@ namespace ProyectoAppMovil
         {
 
 
-            Navigation.PushAsync(new Prueba());
+           
 
         }
 

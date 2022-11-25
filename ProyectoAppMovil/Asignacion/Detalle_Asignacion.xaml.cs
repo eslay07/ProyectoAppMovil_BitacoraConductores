@@ -57,6 +57,7 @@ namespace ProyectoAppMovil
             ResultadoDelete = Delete(db, IdSeleccionado);
             DisplayAlert("Confirmación", "El Conductor se eliminó correctamente", "OK");
             Limpiar();
+            Navigation.PushAsync(new Registro_Asignacion());
 
         }
 
@@ -66,7 +67,7 @@ namespace ProyectoAppMovil
             var db = new SQLiteConnection(rutadb);
             ResultadoUpdate = Update(db, txtNombre.Text, txtApellidos.Text, txtEdad.Text,txtCedula.Text,txtNum_Licencia.Text,txtTip_Sangre.Text, IdSeleccionado);
             DisplayAlert("Confirmación", "Conductor se acualizó correctamente", "OK");
-
+            Navigation.PushAsync(new Registro_Asignacion());
         }
         public static IEnumerable<T_Conductor> Delete(SQLiteConnection db, int id_Conductor)
         {

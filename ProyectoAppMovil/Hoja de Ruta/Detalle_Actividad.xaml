@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAppMovil.Detalle_Actividad">
+    <ContentPage.Content>
+        <StackLayout Margin="5"
+                     BackgroundColor="LightBlue">
+
+            <Label x:Name="lblMensaje1"
+                   HorizontalOptions="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+
+
+                </Grid.ColumnDefinitions>
+
+
+
+                <Entry x:Name="txtNombreA"  Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtLogin" Placeholder="Login" Grid.Row="0" Grid.Column="1"/>
+                <TimePicker x:Name="txtHoraSa"  Grid.Row="1" Grid.Column="0"/>
+                <TimePicker x:Name="txtHoraLl"   Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtDestino" Placeholder="Kilometraje"  Grid.Row="2" Grid.Column="0"  />
+                <DatePicker x:Name="txtFecha"   Grid.Row="2" Grid.Column="1"  />
+
+
+            </Grid>
+
+
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

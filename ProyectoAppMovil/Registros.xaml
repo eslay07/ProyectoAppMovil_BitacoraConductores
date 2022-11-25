@@ -6,8 +6,11 @@
         <StackLayout>
             <Label Text="Registros de Bitacora"
                FontSize="Title"
-                HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="btnRegistro" Text="Conductor"  FontFamily="{StaticResource FontAwesomeSolid}" CornerRadius="30" FontSize="Title" TextColor="White" BackgroundColor="CadetBlue" Clicked="btnRegistro_Clicked"/>
+                HorizontalOptions="CenterAndExpand" VerticalOptions="Fill" />
+            <Button x:Name="btnRegistro" Text="Conductor"   CornerRadius="30" FontSize="Title" TextColor="White" BackgroundColor="CadetBlue" Clicked="btnRegistro_Clicked"/>
+            <Button x:Name="btnRecarga" Text="Recargas"   CornerRadius="30" FontSize="Title" TextColor="White" BackgroundColor="CadetBlue" Clicked="btnRecarga_Clicked" />
+            <Button x:Name="btnHoja" Text="Actividades"   CornerRadius="30" FontSize="Title" TextColor="White" BackgroundColor="CadetBlue" Clicked="btnHoja_Clicked" />
+            <Button x:Name="btnIncidente" Text="Incidentes"   CornerRadius="30" FontSize="Title" TextColor="White" BackgroundColor="CadetBlue" Clicked="btnIncidente_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

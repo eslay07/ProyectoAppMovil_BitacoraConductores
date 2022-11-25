@@ -1,4 +1,5 @@
 ﻿using ProyectoAppMovil.Cl;
+using ProyectoAppMovil.Tablas;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,49 @@ namespace ProyectoAppMovil
             {
                 throw;
             }
+
+        }
+
+        private void btnRecarga_Clicked(object sender, EventArgs e)
+        {
+
+            try
+            {
+                var rutaDB = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "BitacoraSQLite.db3");
+                var db = new SQLiteConnection(rutaDB);
+                db.CreateTable<T_Recarga>();
+
+                Navigation.PushAsync(new Registro_Recargaxaml());
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
+
+        private void btnHoja_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var rutaDB = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "BitacoraSQLite.db3");
+                var db = new SQLiteConnection(rutaDB);
+                db.CreateTable<T_Actividad>();
+
+                Navigation.PushAsync(new Registro_Actividad());
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+
+        }
+
+        private void btnIncidente_Clicked(object sender, EventArgs e)
+        {
 
         }
     }

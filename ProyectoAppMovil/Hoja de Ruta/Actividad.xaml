@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAppMovil.Hoja">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+
+                <Label Text="Hoja de Ruta"  HorizontalOptions="Center" FontSize="Medium" BackgroundColor="Azure" />
+                <Label Text="Datos de Ruta" FontSize="Medium" VerticalOptions="Center" />
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+
+
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="txtNombreA"  Placeholder="Actividad" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtLoginA" Placeholder="Login" Grid.Row="0" Grid.Column="1"/>
+                    <TimePicker x:Name="txtHoraSalA"  Grid.Row="1" Grid.Column="0"/>
+                    <TimePicker x:Name="txtHoraLLeA"  Grid.Row="1" Grid.Column="1"/>
+                    <Entry x:Name="txtDestino" Placeholder="Destino"  Grid.Row="2" Grid.Column="0"  />
+                    <DatePicker x:Name="txtFechaA"   Grid.Row="2" Grid.Column="1"  />
+
+                </Grid>
+                <Button x:Name="btnGuardar1" Text="Guardar" Clicked="btnGuardar1_Clicked"  />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAppMovil.Detalle_Recarga">
+    <ContentPage.Content>
+        <StackLayout Margin="5"
+                     BackgroundColor="LightBlue">
+
+            <Label x:Name="lblMensaje"
+                   HorizontalOptions="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+
+
+                </Grid.ColumnDefinitions>
+
+
+
+                <DatePicker x:Name="txtFechaR"  Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtTicketR" Placeholder="Ticket" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtGalonesR" Placeholder="Galones" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtValorR" Placeholder="Valor $" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtKilometrajeR" Placeholder="Kilometraje" Keyboard="Numeric" Grid.Row="2" Grid.Column="0"  />
+                <Entry x:Name="txtEstacionR" Placeholder="Estacion"  Grid.Row="2" Grid.Column="1"  />
+
+
+            </Grid>
+
+
+            <Button Text="Actualizar"
+                    x:Name="btn_actualizar"  Clicked="btn_actualizar_Clicked"/>
+            <Button Text="Eliminar"
+                    x:Name="btn_eliminar"  Clicked="btn_eliminar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

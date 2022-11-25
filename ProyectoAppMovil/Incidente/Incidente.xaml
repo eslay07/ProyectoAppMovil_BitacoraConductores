@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAppMovil.Incidente">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+
+                <Label Text="Registro de Incidentes Vehiculares"  HorizontalOptions="Center" FontSize="22" BackgroundColor="Azure"  />
+                <Label Text="Incidente presentado" FontSize="Medium" VerticalOptions="Center" />
+
+                    <Editor x:Name="txtDescripcion"  Placeholder="Realice una descripcion de los sucesos ocurridos en el incidente" HorizontalOptions="FillAndExpand"/>
+
+                <Button x:Name="btnGuardar2" Text="Guardar" Clicked="btnGuardar2_Clicked" />
+                <Image x:Name="fotoIncidente" Source="{Binding Fotico}"></Image>
+                <Button Text="Tomar Foto" Command="{Binding CapturarComando}" Grid.Row="1"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -9,7 +9,8 @@
 
                 <Label Text="Recarga de Gasolina Vehiculos TN"  HorizontalOptions="Center" FontSize="Medium" BackgroundColor="Azure" />
                 <Label Text="Datos de Recarga" FontSize="Medium" VerticalOptions="Center" />
-
+                <Label x:Name="lblMensaje"
+                   HorizontalOptions="Center"/>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
@@ -28,17 +29,17 @@
                     </Grid.ColumnDefinitions>
 
 
-                   
+                 
                     <DatePicker x:Name="txtFechaR"  Grid.Row="0" Grid.Column="0"/>
                     <Entry x:Name="txtTicketR" Placeholder="Ticket" Grid.Row="0" Grid.Column="1"/>
                     <Entry x:Name="txtGalonesR" Placeholder="Galones" Grid.Row="1" Grid.Column="0"/>
-                    <Entry x:Name="txtValorR" Placeholder="Valor $" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
-                    <Entry x:Name="txtKilometrajeR" Placeholder="Kilometraje" Keyboard="Numeric" Grid.Row="2" Grid.Column="0"  />
+                    <Entry x:Name="txtValorR" Placeholder="Valor $"  Grid.Row="1" Grid.Column="1"/>
+                    <Entry x:Name="txtKilometrajeR" Placeholder="Kilometraje"  Grid.Row="2" Grid.Column="0"  />
                     <Entry x:Name="txtEstacionR" Placeholder="Estacion"  Grid.Row="2" Grid.Column="1"  />
 
 
                 </Grid>
-                <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" />
+                <Button x:Name="btnGuardarq" Text="Guardar" Clicked="btnGuardarq_Clicked" />
 
             </StackLayout>
         </ScrollView>
