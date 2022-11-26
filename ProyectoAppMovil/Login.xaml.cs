@@ -21,8 +21,8 @@ namespace ProyectoAppMovil
         private void btnIniciar_Clicked(object sender, EventArgs e)
         {
             
-                        string usuario = "jotoapanta";
-                        string contraseña = "123";
+                        string usuario = "admin";
+                        string contraseña = "admin";
                         string tUsuario = txtUsuario.Text;
                         string tContraseña = txtContraseña.Text;
                         if (usuario == tUsuario & contraseña == tContraseña)
