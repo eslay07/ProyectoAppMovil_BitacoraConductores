@@ -32,8 +32,8 @@
                 </Grid.ColumnDefinitions>
                 
 
-                <Entry x:Name="txtCodigo" Placeholder="Codigo Emple." Grid.Row="0" Grid.Column="0"/>
-                <Button x:Name="btnBuscar" Text="Buscar" Grid.Row="0" Grid.Column="1" Clicked="btnBuscar_Clicked" />
+                <Entry x:Name="txtCodigo" Placeholder="Codigo Emple." />
+               
                 <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="0"/>
                 <Entry x:Name="txtApellido" Placeholder="Apellido" Grid.Row="1" Grid.Column="1"/>
                 <Entry x:Name="txtEdad" Placeholder="Edad" Grid.Row="2" Grid.Column="0"/>

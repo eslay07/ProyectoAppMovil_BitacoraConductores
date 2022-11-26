@@ -30,6 +30,8 @@ namespace ProyectoAppMovil
             var DatosIncidente = new T_Incidente
             {
 
+         
+
                 descripcion = txtDescripcion.Text
 
             };
