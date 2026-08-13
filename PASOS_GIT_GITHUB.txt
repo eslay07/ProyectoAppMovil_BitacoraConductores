@@ -1,4 +1,4 @@
-PASOS GIT Y GITHUB â€” BitÃ¡cora Conductores
+PASOS GIT Y GITHUB — Bitácora Conductores
 Generado el 12 de agosto de 2026
 
 Rama oficial: master
@@ -16,7 +16,7 @@ git tag --list
 2. VALIDAR ANTES DE PUBLICAR
 
 dotnet build .\ProyectoAppMovil.sln
-NOTA: esta PC no tiene el SDK/workload Xamarin requerido. Ejecuta el comando en Visual Studio con las cargas mÃ³viles heredadas instaladas.
+NOTA: esta PC no tiene el SDK/workload Xamarin requerido. Ejecuta el comando en Visual Studio con las cargas móviles heredadas instaladas.
 
 3. PUBLICAR EN EL REPOSITORIO EXISTENTE
 
@@ -31,15 +31,15 @@ git switch master
 git pull --ff-only origin master
 git status --short
 
-# Edita y prueba tus cambios. DespuÃ©s revisa exactamente lo que vas a confirmar:
+# Edita y prueba tus cambios. Después revisa exactamente lo que vas a confirmar:
 git diff
 git add -A
 git diff --cached --stat
 git diff --cached
-git commit -m "feat: mejorar registro de la bitÃ¡cora de conductores" -m "Describe aquÃ­ quÃ© cambiÃ³, por quÃ© y cÃ³mo se validÃ³."
+git commit -m "feat: mejorar registro de la bitácora de conductores" -m "Describe aquí qué cambió, por qué y cómo se validó."
 git push origin master
 
-5. CREAR UNA RAMA PARA UNA VERSIÃ“N ALTERNATIVA
+5. CREAR UNA RAMA PARA UNA VERSIÓN ALTERNATIVA
 
 git switch master
 git pull --ff-only origin master
@@ -54,4 +54,4 @@ git push -u origin codex/nombre-de-la-variante
 git status --short
 git ls-files | Select-String -Pattern '(^|/)(\.env|\.clasp\.json|config\.json)$|\.(db|sqlite|log|key|pem|p12|pfx|keystore|jks)$'
 
-Si aparece una credencial, no hagas push. RetÃ­rala, revÃ³cala en el proveedor y vuelve a revisar todo el historial. Nunca uses fechas falsas: cada commit debe reflejar trabajo real ejecutado ese dÃ­a.
+Si aparece una credencial, no hagas push. Retírala, revócala en el proveedor y vuelve a revisar todo el historial. Nunca uses fechas falsas: cada commit debe reflejar trabajo real ejecutado ese día.
