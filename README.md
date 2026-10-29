@@ -1,5 +1,15 @@
 # Bitácora para Conductores
 
+## Lectura rápida para evaluar el proyecto
+
+Prototipo académico móvil para organizar conductores, vehículos, combustible e incidentes.
+
+**Tecnologías:** C# · Xamarin.Forms · XAML · SQLite
+**Estado:** Proyecto universitario de 2022. Xamarin es una plataforma histórica fuera de soporte; no representa una aplicación preparada para producción ni una compilación validada con herramientas actuales.
+
+[Ver el problema, la evidencia de implementación y las limitaciones](PORTFOLIO.md) · [Portafolio del autor](https://github.com/eslay07)
+
+
 Aplicación móvil académica para registrar información operativa relacionada con conductores, vehículos, recargas de combustible, actividades de ruta e incidentes.
 
 > **Estado del proyecto:** prototipo universitario desarrollado en 2022 y conservado como evidencia de aprendizaje. El repositorio refleja el alcance alcanzado durante el proyecto académico; no representa una aplicación terminada ni preparada para producción.
@@ -218,7 +228,7 @@ Aunque el prototipo no está terminado, el repositorio documenta experiencia aca
 
 ## Autor
 
-**Jimmy Omar Toapanta Guayanay**  
+**Jimmy Omar Toapanta Guayanay**
 Ingeniero en Informática — Quito, Ecuador
 
 Repositorio: [github.com/eslay07/ProyectoAppMovil_BitacoraConductores](https://github.com/eslay07/ProyectoAppMovil_BitacoraConductores)
